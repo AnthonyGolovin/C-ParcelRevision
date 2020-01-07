@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+@using Package.Models
+
+@{
+  Parcel bob = (Parcel)ViewData["myParcel"];
+}
+<html>
+    <head>
+    <title>Package</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <p>Your package dimensions: @Model._Length, @Model._Width, @Model._Height</p>
+    <p> Package price: @bob._Volume </p>
+  </body>
+</html>
