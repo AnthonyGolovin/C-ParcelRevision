@@ -11,6 +11,11 @@
   </head>
   <body>
     <p>Your package dimensions: @Model._Length, @Model._Width, @Model._Height</p>
-    <p> Package price: @bob._Volume </p>
+    <p>Shipping prices:</p>
+    <p>   Under 30 cubic inches: $5</p>
+    <p>   Between 30 and 2500 cubic inches: $1 per cubic inch</p>
+    <p>   2500 cubic inches and Above: $5</p>
+    <p> Package price: $@bob._Price </p>
+    <a href="/">click here to return</a>
   </body>
 </html>
