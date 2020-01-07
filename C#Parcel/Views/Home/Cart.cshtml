@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 @using Package.Models
 
-@{
+<!-- @{
   Parcel bob = (Parcel)ViewData["myParcel"];
-}
+} -->
 <html>
     <head>
     <title>Package</title>
@@ -15,7 +15,7 @@
     <p>   Under 30 cubic inches: $5</p>
     <p>   Between 30 and 2500 cubic inches: $1 per cubic inch</p>
     <p>   2500 cubic inches and Above: $5</p>
-    <p> Package price: $@bob._Price </p>
+    <p> Package price: $@Model._Price </p>
     <a href="/">click here to return</a>
   </body>
 </html>
